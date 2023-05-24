@@ -1,0 +1,10 @@
+git init                                      - initialize your working directory as a github repository
+git status                                    - check the status of files (lists all modifications made in your workning directory)
+git add -a                                    - adds all files to the staging area (-a/* is used to add everything listed by "git status" to staging area || to add singular files, replace "-a" by filename.extension)
+git commit                                    - saves all files from staging area into local repository; files are now ready to be pushed to github || this opens the editor you chose while installing git || type your commit message here
+git commit -m "<commit message>"              - alternative way to do the samme as above
+git remote add origin <url>                   - get this URL from your github online repository; "origin" here is the nickname of your URL
+git remote -v                                 - lists pull and fetch URLs
+git remote set url origin <url>               - (in case you need to change URL from http to ssh)
+git push -u origin master                     - (origin = where to; master = where from)
+git log                                       - shows history of commits
